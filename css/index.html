@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example Domain</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <style type="text/css">
+        .large {
+            font-size: 300%;
+            color: green;
+        }
+
+        #green {
+            color: blueviolet;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        /* div {
+            background-color: beige;
+            width: 500px;
+            height: 300px;
+        } */
+
+        .beigebox {
+            background-color: beige;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            /* left: 100px;
+            top: 200px; */
+            top: -50px;
+            left: -10px;
+            z-index: 1;
+            /* float: right; */
+        }
+
+        .palevioletredbox {
+            background-color: palevioletred;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            z-index: 2;
+            margin: 50px 100px 30px 10px;
+            padding: 20px;
+            /* float: right; */
+        }
+
+        .purplebox {
+            background-color: purple;
+            width: 300px;
+            height: 200px;
+            /* position: fixed; */
+            position: static;
+            margin: 40px;
+        }
+
+        /* .clear {
+            float: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="beigebox large">This is first paragraph</p>
+    </div>
+
+    <p id='green' class="large palevioletredbox">This is second paragraph</p>
+    <p class="purplebox">This is the <span class="underline large bold">third </span> paragraph </p>
+
+</body>
+
+</html>
