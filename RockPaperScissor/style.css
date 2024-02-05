@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(235, 199, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#play {
+    font-size: 8vmin;
+    color: rgb(68, 91, 121);
+    text-shadow: 2px 2px 4px #120f0f62;
+}
+
+.choices {
+    height: 565px;
+    width: 565px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular img:hover {
+    cursor: pointer;
+    background-color: #2a0831;
+}
+
+.circular {
+    display: flex;
+    align-items: center;
+}
+
+.circular img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    margin: 1px 5px;
+    text-align: center;
+    background-color: rgb(193, 237, 132);
+    /* Adjust the margin as needed for spacing between images */
+}
+
+
+.score {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    gap: 4rem;
+    font-size: 7vmin;
+    color: rgb(68, 91, 121);
+    text-shadow: 2px 2px 4px #120f0f62;
+}
+
+
+#user-score:hover,
+#comp-score:hover {
+    cursor: pointer;
+    background-color: #081b31;
+    color: white;
+}
+
+#vsImg {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    margin: 1px 5px;
+    align-self: center;
+    background-color: rgb(92, 126, 44);
+}
+
+#scoreName {
+    font-size: 5vmin;
+}
+
+.msg-container {
+    margin-top: 5rem;
+    align-self: center;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
