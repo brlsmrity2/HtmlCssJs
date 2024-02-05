@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Learning Javascript
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <style>
+        #circle {
+            width: 50px;
+            height: 50px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: red;
+        }
+    </style> -->
+
+
+</head>
+
+<body>
+    <!-- <button id="textChanger">Change div text....</button>
+    <div id="firstDiv">
+        This is Some text
+    </div>
+    <button id="appender">Append Text</button>
+    <div id="secondDiv">
+        This is second text
+    </div> -->
+
+    <!-- <div id="circle"></div> -->
+
+    <!-- <script type="text/javascript">
+        /*alert(document.getElementById("text").innerHTML);
+        document.getElementById("textChanger").onclick = function () {
+            alert("hi");
+            document.getElementById("firstDiv").innerHTML = "This is changed div"
+        }
+        document.getElementById("appender").onclick = function () {
+            alert("hi");
+            document.getElementById("secondDiv").innerHTML = document.getElementById("firstDiv").innerHTML + " " + document.getElementById("secondDiv").innerHTML
+        }
+        */
+        // ERASE CIRCLE
+        document.getElementById("circle").onclick = function () {
+            document.getElementById("circle").style.display = "none"
+        }
+    </script> -->
+    <button id="textchanger">Click to change Text</button>
+    <div id="firstDiv">Hello There</div>
+    <script type="text/javascript">
+        var myArray = new Array();
+        myArray[0] = "pizza";
+        myArray[1] = "Chocolate";
+        document.getElementById("textchanger").onclick = function () {
+            document.getElementById("firstDiv").innerHTML = myArray[0];
+        }
+    </script>
+
+
+</body>
+
+</html>
