@@ -1,97 +1,119 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Set background color, flex layout for body */
 body {
-    background-color: rgb(235, 199, 99);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(235, 199, 99);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Style the play button */
 #play {
-    font-size: 8vmin;
-    color: rgb(68, 91, 121);
-    text-shadow: 2px 2px 4px #120f0f62;
+  font-size: 8vmin;
+  color: rgb(68, 91, 121);
+  text-shadow: 2px 2px 4px #120f0f62;
 }
 
+/* Adjust the choices container */
 .choices {
-    height: 565px;
-    width: 565px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 565px;
+  width: 565px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Adjust hover effect for circular images */
 .circular img:hover {
-    cursor: pointer;
-    background-color: #2a0831;
+  cursor: pointer;
+  background-color: #2a0831;
 }
 
+/* Adjust styling for circular container */
 .circular {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
+/* Adjust styling for circular images */
 .circular img {
-    width: 150px;
-    height: 150px;
-    border: 5px solid #000;
-    border-radius: 50%;
-    margin: 1px 5px;
-    text-align: center;
-    background-color: rgb(193, 237, 132);
-    /* Adjust the margin as needed for spacing between images */
+  width: 150px;
+  height: 150px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  margin: 2px 6px;
+  text-align: center;
+  background-color: rgb(193, 237, 132);
 }
 
-
+/* Adjust styling for score container */
 .score {
-    display: flex;
-    align-items: center;
-    font-size: 3rem;
-    margin-top: 2rem;
-    gap: 4rem;
-    font-size: 7vmin;
-    color: rgb(68, 91, 121);
-    text-shadow: 2px 2px 4px #120f0f62;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  gap: 4rem;
+  font-size: 7vmin;
+  color: rgb(68, 91, 121);
+  text-shadow: 2px 2px 4px #120f0f62;
 }
 
-
+/* Adjust hover effect for user and computer scores */
 #user-score:hover,
 #comp-score:hover {
-    cursor: pointer;
-    background-color: #081b31;
-    color: white;
+  cursor: pointer;
+  background-color: #081b31;
+  color: white;
 }
 
+/* Adjust styling for vs image */
 #vsImg {
-    width: 150px;
-    height: 150px;
-    border: 5px solid #000;
-    border-radius: 50%;
-    margin: 1px 5px;
-    align-self: center;
-    background-color: rgb(92, 126, 44);
+  width: 150px;
+  height: 150px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  margin: 1px 5px;
+  align-self: center;
+  background-color: rgb(92, 126, 44);
 }
 
+/* Adjust styling for score name */
 #scoreName {
-    font-size: 5vmin;
+  font-size: 5vmin;
 }
 
+/* Adjust margin for message container */
 .msg-container {
-    margin-top: 5rem;
-    align-self: center;
+  margin-top: 5rem;
+  align-self: center;
 }
 
+/* Adjust styling for message */
 #msg {
-    background-color: #081b31;
-    color: #fff;
-    font-size: 2rem;
-    display: inline;
-    padding: 1rem;
-    border-radius: 1rem;
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-self: center;
+  position: relative;
+}
+
+#reset-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: rgb(222, 135, 160);
+  border-radius: 1rem;
+  border: 5px;
 }

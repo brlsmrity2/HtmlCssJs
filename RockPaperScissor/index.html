@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissor</title>
+    <title>Rock-Paper-Scissors</title>
     <link rel="styleSheet" href="style.css" />
 </head>
 
@@ -12,19 +12,24 @@
     <h1 id="play">Let's Play Rock-Paper-Scissor</h1>
     <div class="choices">
         <div class="circular">
-            <img src="images/paper.png" />
-            <img src="images/rock.png" />
-            <img src="images/scissor.png" />
+                <img id="paper" src="images/paper.png" alt="P=paper">
+                <img id="rock" src="images/rock.png" alt="rock">
+                <img id="scissors" src="images/scissor.png" alt="scissors">
         </div>
     </div>
+    
     <div class="score">
-        <p id="user-score">Your Score : 0 </p><img id="vsImg" src="images/vs.png" />
-        <p id="comp-score">Computer Score : 0</p>
+        Your Score : <p id="user-score"> 0 </p><img id="vsImg" src="images/vs.png" />
+        Computer Score : <p id="comp-score"> 0</p>
 
     </div>
     <div class="msg-container">
         <p id="msg">Play your move</p>
     </div>
+
+    <button id="reset-btn">
+        Reset Score
+    </button>
 
     <script src="app.js"></script>
 </body>
